@@ -46,7 +46,7 @@ module.exports = {
     { name: 'app' },
     { name: 'api' },
     { name: 'misc' },
-    { name: 'legendizer-lib' },
+    { name: 'lib' },
     { name: 'deps' },
     { name: '*' },
   ],

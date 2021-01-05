@@ -14,7 +14,10 @@
               "libs/api-interfaces/tsconfig.lib.json",
               "libs/api-interfaces/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api-interfaces/**/*"
+            ]
           }
         },
         "test": {
@@ -36,7 +39,7 @@
       },
       "root": "apps/web-app",
       "sourceRoot": "apps/web-app/src",
-      "prefix": "legendizer",
+      "prefix": "schemetwister",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -51,7 +54,9 @@
               "apps/web-app/src/favicon.ico",
               "apps/web-app/src/assets"
             ],
-            "styles": ["apps/web-app/src/styles.scss"],
+            "styles": [
+              "apps/web-app/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -110,7 +115,10 @@
               "apps/web-app/tsconfig.app.json",
               "apps/web-app/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/web-app/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/web-app/**/*"
+            ]
           }
         },
         "test": {
@@ -144,8 +152,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/web-app-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/web-app-e2e/**/*"]
+            "tsConfig": [
+              "apps/web-app-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/web-app-e2e/**/*"
+            ]
           }
         }
       }
@@ -163,7 +176,9 @@
             "outputPath": "dist/apps/web-api",
             "main": "apps/web-api/src/main.ts",
             "tsConfig": "apps/web-api/tsconfig.app.json",
-            "assets": ["apps/web-api/src/assets"]
+            "assets": [
+              "apps/web-api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -192,7 +207,10 @@
               "apps/web-api/tsconfig.app.json",
               "apps/web-api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/web-api/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/web-api/**/*"
+            ]
           }
         },
         "test": {
@@ -209,7 +227,7 @@
       "projectType": "library",
       "root": "libs/web-app/feature-randomize",
       "sourceRoot": "libs/web-app/feature-randomize/src",
-      "prefix": "legendizer",
+      "prefix": "schemetwister",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -243,7 +261,7 @@
       "projectType": "library",
       "root": "libs/web-app/feature-home",
       "sourceRoot": "libs/web-app/feature-home/src",
-      "prefix": "legendizer",
+      "prefix": "schemetwister",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -252,7 +270,10 @@
               "libs/web-app/feature-home/tsconfig.lib.json",
               "libs/web-app/feature-home/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-app/feature-home/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-app/feature-home/**/*"
+            ]
           }
         },
         "test": {
@@ -274,7 +295,7 @@
       "projectType": "library",
       "root": "libs/web-app/ui",
       "sourceRoot": "libs/web-app/ui/src",
-      "prefix": "legendizer",
+      "prefix": "schemetwister",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -283,7 +304,10 @@
               "libs/web-app/ui/tsconfig.lib.json",
               "libs/web-app/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-app/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-app/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -301,9 +325,9 @@
         }
       }
     },
-    "legendizer-lib": {
-      "root": "libs/legendizer-lib",
-      "sourceRoot": "libs/legendizer-lib/src",
+    "liblegendizer": {
+      "root": "libs/liblegendizer",
+      "sourceRoot": "libs/liblegendizer/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -311,16 +335,19 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/legendizer-lib/tsconfig.lib.json",
-              "libs/legendizer-lib/tsconfig.spec.json"
+              "libs/liblegendizer/tsconfig.lib.json",
+              "libs/liblegendizer/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/legendizer-lib/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/liblegendizer/**/*"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/legendizer-lib/jest.config.js",
+            "jestConfig": "libs/liblegendizer/jest.config.js",
             "passWithNoTests": true,
             "codeCoverage": true
           }
@@ -328,12 +355,14 @@
         "build": {
           "builder": "@nrwl/node:package",
           "options": {
-            "outputPath": "dist/libs/legendizer-lib",
-            "tsConfig": "libs/legendizer-lib/tsconfig.lib.json",
-            "packageJson": "libs/legendizer-lib/package.json",
-            "main": "libs/legendizer-lib/src/index.ts",
-            "assets": ["libs/legendizer-lib/*.md"],
-            "srcRootForCompilationRoot": "libs\\legendizer-lib\\src"
+            "outputPath": "dist/libs/liblegendizer",
+            "tsConfig": "libs/liblegendizer/tsconfig.lib.json",
+            "packageJson": "libs/liblegendizer/package.json",
+            "main": "libs/liblegendizer/src/index.ts",
+            "assets": [
+              "libs/liblegendizer/*.md"
+            ],
+            "srcRootForCompilationRoot": "libs\\liblegendizer\\src"
           }
         }
       }

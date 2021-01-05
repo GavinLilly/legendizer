@@ -1,5 +1,5 @@
 {
-  "npmScope": "legendizer",
+  "npmScope": "schemetwister",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": {
@@ -15,7 +15,12 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
@@ -33,15 +38,24 @@
       "tags": []
     },
     "web-app-feature-randomize": {
-      "tags": ["type:feature", "scope:web-app"]
+      "tags": [
+        "type:feature",
+        "scope:web-app"
+      ]
     },
     "web-app-feature-home": {
-      "tags": ["type:feature", "scope:web-app"]
+      "tags": [
+        "type:feature",
+        "scope:web-app"
+      ]
     },
     "web-app-ui": {
-      "tags": ["type:ui", "scope:web-app"]
+      "tags": [
+        "type:ui",
+        "scope:web-app"
+      ]
     },
-    "legendizer-lib": {
+    "liblegendizer": {
       "tags": []
     }
   },

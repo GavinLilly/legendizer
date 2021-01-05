@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
-import { IVillainGroup } from '@legendizer/legendizer-lib';
+import { IVillainGroup } from '@schemetwister/liblegendizer';
 
 @Component({
-  selector: 'legendizer-villain-group',
+  selector: 'schemetwister-villain-group',
   templateUrl: './villain-group.component.html',
   styleUrls: ['./villain-group.component.scss']
 })

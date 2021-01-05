@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
-import { IHenchmen } from '@legendizer/legendizer-lib';
+import { IHenchmen } from '@schemetwister/liblegendizer';
 
 @Component({
-  selector: 'legendizer-henchmen',
+  selector: 'schemetwister-henchmen',
   templateUrl: './henchmen.component.html',
   styleUrls: ['./henchmen.component.scss']
 })

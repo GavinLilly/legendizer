@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
-import { IHero } from "@legendizer/legendizer-lib";
+import { IHero } from "@schemetwister/liblegendizer";
 
 @Component({
-  selector: 'legendizer-heroes',
+  selector: 'schemetwister-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss']
 })
