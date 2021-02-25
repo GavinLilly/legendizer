@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WebAppUiModule } from '@legendizer/web-app/ui';
 
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   {
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {}),
     NgbModule,
     WebAppUiModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],
