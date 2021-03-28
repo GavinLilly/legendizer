@@ -46,7 +46,7 @@ module.exports = {
     { name: 'app' },
     { name: 'api' },
     { name: 'misc' },
-    { name: 'lib' },
+    { name: 'libtwister' },
     { name: 'deps' },
     { name: '*' },
   ],
