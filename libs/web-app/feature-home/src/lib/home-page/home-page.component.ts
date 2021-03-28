@@ -6,7 +6,7 @@ import {
   Heroes,
   Masterminds,
   VillainGroups,
-} from '@schemetwister/liblegendizer';
+} from '@schemetwister/libtwister';
 
 @Component({
   selector: 'schemetwister-home-page',

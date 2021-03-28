@@ -36,8 +36,8 @@
       "@schemetwister/web-app/ui": [
         "libs/web-app/ui/src/index.ts"
       ],
-      "@schemetwister/liblegendizer": [
-        "libs/liblegendizer/src/index.ts"
+      "@schemetwister/libtwister": [
+        "libs/libtwister/src/index.ts"
       ]
     }
   },

@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
-import { IVillainGroup } from '@schemetwister/liblegendizer';
+import { IVillainGroup } from '@schemetwister/libtwister';
 
 @Component({
   selector: 'schemetwister-villain-group',

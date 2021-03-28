@@ -7,7 +7,7 @@ import {
   IScheme,
   Masterminds,
   Schemes,
-} from '@schemetwister/liblegendizer';
+} from '@schemetwister/libtwister';
 
 import { GameSetupStore } from '../game-setup-store';
 

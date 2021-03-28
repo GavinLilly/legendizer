@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { CardType, GameSets } from '@schemetwister/liblegendizer';
+import { CardType, GameSets } from '@schemetwister/libtwister';
 
 import { VillainGroupComponent } from './villain-group.component';
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { GameSets, GameSetSize, IGameSet } from '@schemetwister/liblegendizer';
+import { GameSets, GameSetSize, IGameSet } from '@schemetwister/libtwister';
 
 import { GameSetupStore } from '../game-setup-store';
 

@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 
-import { IHero } from "@schemetwister/liblegendizer";
+import { IHero } from "@schemetwister/libtwister";
 
 @Component({
   selector: 'schemetwister-heroes',

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { IMastermind } from "@schemetwister/liblegendizer";
+import { IMastermind } from "@schemetwister/libtwister";
 
 @Component({
   selector: 'schemetwister-mastermind',

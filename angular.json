@@ -325,9 +325,9 @@
         }
       }
     },
-    "liblegendizer": {
-      "root": "libs/liblegendizer",
-      "sourceRoot": "libs/liblegendizer/src",
+    "libtwister": {
+      "root": "libs/libtwister",
+      "sourceRoot": "libs/libtwister/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
@@ -335,19 +335,19 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/liblegendizer/tsconfig.lib.json",
-              "libs/liblegendizer/tsconfig.spec.json"
+              "libs/libtwister/tsconfig.lib.json",
+              "libs/libtwister/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/liblegendizer/**/*"
+              "!libs/libtwister/**/*"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/liblegendizer/jest.config.js",
+            "jestConfig": "libs/libtwister/jest.config.js",
             "passWithNoTests": true,
             "codeCoverage": true
           }
@@ -355,12 +355,12 @@
         "build": {
           "builder": "@nrwl/node:package",
           "options": {
-            "outputPath": "dist/libs/liblegendizer",
-            "tsConfig": "libs/liblegendizer/tsconfig.lib.json",
-            "packageJson": "libs/liblegendizer/package.json",
-            "main": "libs/liblegendizer/src/index.ts",
+            "outputPath": "dist/libs/libtwister",
+            "tsConfig": "libs/libtwister/tsconfig.lib.json",
+            "packageJson": "libs/libtwister/package.json",
+            "main": "libs/libtwister/src/index.ts",
             "assets": [
-              "libs/liblegendizer/*.md"
+              "libs/libtwister/*.md"
             ],
             "srcRootForCompilationRoot": "libs\\liblegendizer\\src"
           }

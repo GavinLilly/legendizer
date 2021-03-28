@@ -4,7 +4,7 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../coverage/libs/liblegendizer',
+  coverageDirectory: '../../coverage/libs/libtwister',
   globals: { 'ts-jest': { tsConfig: '<rootDir>/tsconfig.spec.json' } },
-  displayName: 'liblegendizer',
+  displayName: 'libtwister',
 };
