@@ -1,6 +1,6 @@
 {
-  "name": "web-app",
-  "short_name": "web-app",
+  "name": "Scheme Twister",
+  "short_name": "SchemeTwister",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
