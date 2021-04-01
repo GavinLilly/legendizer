@@ -6,6 +6,6 @@ module.exports = {
     '<rootDir>/libs/web-app/feature-randomize',
     '<rootDir>/libs/web-app/feature-home',
     '<rootDir>/libs/web-app/ui',
-    '<rootDir>/libs/liblegendizer',
+    '<rootDir>/libs/libtwister',
   ],
 };

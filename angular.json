@@ -14,10 +14,7 @@
               "libs/api-interfaces/tsconfig.lib.json",
               "libs/api-interfaces/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/api-interfaces/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**/*"]
           }
         },
         "test": {
@@ -55,9 +52,7 @@
               "apps/web-app/src/assets",
               "apps/web-app/src/manifest.webmanifest"
             ],
-            "styles": [
-              "apps/web-app/src/styles.scss"
-            ],
+            "styles": ["apps/web-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -118,10 +113,7 @@
               "apps/web-app/tsconfig.app.json",
               "apps/web-app/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-app/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/web-app/**/*"]
           }
         },
         "test": {
@@ -155,13 +147,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/web-app-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-app-e2e/**/*"
-            ]
+            "tsConfig": ["apps/web-app-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/web-app-e2e/**/*"]
           }
         }
       }
@@ -179,9 +166,7 @@
             "outputPath": "dist/apps/web-api",
             "main": "apps/web-api/src/main.ts",
             "tsConfig": "apps/web-api/tsconfig.app.json",
-            "assets": [
-              "apps/web-api/src/assets"
-            ]
+            "assets": ["apps/web-api/src/assets"]
           },
           "configurations": {
             "production": {
@@ -210,10 +195,7 @@
               "apps/web-api/tsconfig.app.json",
               "apps/web-api/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/web-api/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/web-api/**/*"]
           }
         },
         "test": {
@@ -273,10 +255,7 @@
               "libs/web-app/feature-home/tsconfig.lib.json",
               "libs/web-app/feature-home/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-app/feature-home/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-app/feature-home/**/*"]
           }
         },
         "test": {
@@ -307,10 +286,7 @@
               "libs/web-app/ui/tsconfig.lib.json",
               "libs/web-app/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-app/ui/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-app/ui/**/*"]
           }
         },
         "test": {
@@ -341,10 +317,7 @@
               "libs/libtwister/tsconfig.lib.json",
               "libs/libtwister/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/libtwister/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/libtwister/**/*"]
           }
         },
         "test": {
@@ -362,10 +335,8 @@
             "tsConfig": "libs/libtwister/tsconfig.lib.json",
             "packageJson": "libs/libtwister/package.json",
             "main": "libs/libtwister/src/index.ts",
-            "assets": [
-              "libs/libtwister/*.md"
-            ],
-            "srcRootForCompilationRoot": "libs\\liblegendizer\\src"
+            "assets": ["libs/libtwister/*.md"],
+            "srcRootForCompilationRoot": "libs\\libtwister\\src"
           }
         }
       }

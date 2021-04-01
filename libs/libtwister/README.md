@@ -1,7 +1,7 @@
-# liblegendizer
+# libtwister
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Running unit tests
 
-Run `ng test liblegendizer` to execute the unit tests via [Jest](https://jestjs.io).
+Run `ng test libtwister` to execute the unit tests via [Jest](https://jestjs.io).
