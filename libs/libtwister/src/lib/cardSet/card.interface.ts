@@ -1,4 +1,5 @@
 import { IGameSet } from '../gamesets';
+import { IKeyword } from '../keywords/keyword.interface';
 
 import { CardType } from './cardType.enum';
 
@@ -7,4 +8,5 @@ export interface ICard {
   name: string;
   gameSet: IGameSet;
   cardType: CardType;
+  keywords?: IKeyword[];
 }

@@ -3,6 +3,7 @@ import merge from 'ts-deepmerge';
 import { CardType, ICard } from '../cardSet';
 import { DeepPartial } from '../deepPartial.type';
 import { IGameSet } from '../gamesets';
+import { IKeyword } from '../keywords/keyword.interface';
 import { ITeam } from '../teams';
 
 import { INumPlayerRules, IRules, numPlayers } from './rules.interface';
@@ -36,6 +37,7 @@ export interface SchemeParams {
   setup: string;
   specialRules?: string;
   requiredCards?: IRequiredCards;
+  keywords?: IKeyword[];
 }
 
 export class Scheme implements IScheme {
@@ -48,6 +50,7 @@ export class Scheme implements IScheme {
   setup: string;
   specialRules?: string | undefined;
   requiredCards?: IRequiredCards | undefined;
+  keywords?: IKeyword[];
   rules: IRules = {
     1: {
       heroDeck: {

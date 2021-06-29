@@ -1,5 +1,6 @@
-import { CardType, Keyword } from '../cardSet';
+import { CardType } from '../cardSet';
 import { GameSets } from '../gamesets';
+import { Keywords } from '../keywords/keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -15,7 +16,7 @@ export const Shield: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.SHIELD,
-    keyword: Keyword.ADAPT,
+    keyword: Keywords.ADAPT,
   },
   HYDRA_SUPER_ADAPTOID: {
     id: 'ae671cab-2112-47e9-8349-1704dc4052d7',
@@ -25,6 +26,6 @@ export const Shield: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.SHIELD,
-    keyword: Keyword.ADAPT,
+    keyword: Keywords.ADAPT,
   },
 };
