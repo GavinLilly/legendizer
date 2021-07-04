@@ -1,7 +1,6 @@
+import { CardType } from '../enums';
 import { IGameSet } from '../gamesets';
 import { IKeyword } from '../keywords/keyword.interface';
-
-import { CardType } from './cardType.enum';
 
 export interface ICard {
   id: string;

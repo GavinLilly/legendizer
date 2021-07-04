@@ -1,7 +1,8 @@
 import merge from 'ts-deepmerge';
 
-import { CardType, ICard } from '../cardSet';
+import { ICard } from '../cardSet';
 import { DeepPartial } from '../deepPartial.type';
+import { CardType } from '../enums';
 import { IGameSet } from '../gamesets';
 import { IKeyword } from '../keywords/keyword.interface';
 import { ITeam } from '../teams';
@@ -28,6 +29,10 @@ export interface IScheme extends ICard {
   rules: IRules;
 }
 
+/**
+ * Any definition changes here must be replicated in the Scheme
+ * constructor below
+ */
 export interface SchemeParams {
   id: string;
   name: string;
@@ -127,6 +132,7 @@ export class Scheme implements IScheme {
     this.setup = params.setup;
     this.specialRules = params.specialRules;
     this.requiredCards = params.requiredCards;
+    this.keywords = params.keywords;
 
     if (overrideRulesAll !== undefined) {
       const players: numPlayers[] = [1, 2, 3, 4, 5];

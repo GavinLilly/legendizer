@@ -1,6 +1,6 @@
 import { GameSets } from '../gamesets';
 import { Henchmen } from '../henchmen';
-import { HeroClass } from '../heroes';
+import { HeroClass } from '../enums';
 
 import { IScheme, Scheme } from './scheme';
 
@@ -29,8 +29,8 @@ export const SecretWarsVolume2: Record<SchemeNames, IScheme> = {
     {
       1: {
         villainDeck: {
-          numVillainGroups: 2
-        }
+          numVillainGroups: 2,
+        },
       },
       2: {
         villainDeck: {

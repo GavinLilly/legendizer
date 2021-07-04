@@ -1,5 +1,5 @@
 import { GameSets } from '../gamesets';
-import { HeroClass } from '../heroes';
+import { HeroClass } from '../enums';
 import { VillainGroups } from '../villains';
 
 import { IScheme, Scheme } from './scheme';
@@ -64,8 +64,8 @@ Twist 10: Evil Wins!`,
     {
       1: {
         heroDeck: {
-          numHeroes: 4
-        }
+          numHeroes: 4,
+        },
       },
       2: {
         heroDeck: {

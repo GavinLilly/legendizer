@@ -1,7 +1,9 @@
-import { CardType, ICard } from '../cardSet';
+import { ICard } from '../cardSet';
+import { CardType } from '../enums';
 import { GameSetSize, GameSets, IGameSet } from '../gamesets';
 import { Henchmen, IHenchmen } from '../henchmen';
 import { Heroes } from '../heroes';
+import { IKeyword } from '../keywords/keyword.interface';
 import { IMastermind, Masterminds } from '../masterminds';
 import {
   IDeckRequirements,
@@ -430,6 +432,32 @@ ${GameSets.ALL.filter((item) =>
           } as IAdditionalDeck)
         : undefined,
     };
+
+    const uniqueKeywords: Set<IKeyword> = new Set();
+
+    function addKeyword(keywords: IKeyword[] | undefined) {
+      if (keywords != undefined) {
+        keywords.forEach((keyword) => {
+          uniqueKeywords.add(keyword);
+        });
+      }
+    }
+
+    [
+      gameSetup.heroDeck,
+      gameSetup.villainDeck,
+      gameSetup.additionalDeck?.deck,
+    ].forEach((deck) => {
+      if (deck != undefined) {
+        deck.cards.forEach((card) => addKeyword(card.keywords));
+      }
+    });
+
+    addKeyword(gameSetup.scheme.keywords);
+    addKeyword(gameSetup.mastermind.keywords);
+
+    gameSetup.keywords =
+      uniqueKeywords.size == 0 ? undefined : [...uniqueKeywords];
 
     return gameSetup;
   }

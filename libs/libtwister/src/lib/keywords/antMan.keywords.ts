@@ -1,4 +1,4 @@
-import { HeroClass } from '../heroes';
+import { HeroClass } from '../enums';
 import {
   CHIVALROUS_DUEL,
   EMPOWERED,
