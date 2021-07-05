@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -30,6 +31,7 @@ export const CivilWar: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Heroes for Hire',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.CIVIL_WAR,
+    keywords: [DarkCityKeywords.Bribe],
   },
   REGISTRATION_ENFORCERS: {
     id: 'a0c95643-8d51-44aa-9abf-24bd586be5ce',

@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -47,6 +48,7 @@ export const CivilWar: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.CIVIL_WAR,
+    keywords: [DarkCityKeywords.Bribe],
   },
   RAGNAROK: {
     id: '9492f5bc-f54a-4304-b158-0a7df6fc2127',

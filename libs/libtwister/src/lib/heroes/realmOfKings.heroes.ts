@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -41,5 +42,6 @@ export const RealmOfKings: Record<HeroNames, IHero> = {
     team: Teams.INHUMANS,
     cardType: CardType.HERO,
     gameSet: GameSets.REALM_OF_KINGS,
+    keywords: [DarkCityKeywords.Teleport],
   },
 };

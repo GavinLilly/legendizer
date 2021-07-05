@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -55,6 +56,7 @@ export const SecretWarsVolume1: Record<HeroNames, IHero> = {
     team: Teams.ILLUMINATI,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   LADY_THOR: {
     id: 'b5d618dd-0a8c-42fb-9016-237121c33679',
@@ -69,6 +71,7 @@ export const SecretWarsVolume1: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   MAXIMUS: {
     id: '9a8c0cc8-2c50-4222-801e-224cbb7a3cc6',
@@ -111,6 +114,7 @@ export const SecretWarsVolume1: Record<HeroNames, IHero> = {
     team: Teams.CABAL,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   ULTIMATE_SPIDERMAN: {
     id: '3765d005-a552-472e-b47c-531323c87528',

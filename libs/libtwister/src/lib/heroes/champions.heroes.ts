@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -18,6 +19,7 @@ export const Champions: Record<HeroNames, IHero> = {
     team: Teams.CHAMPIONS,
     cardType: CardType.HERO,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
   MS_MARVEL: {
     id: '7b8700bf-4e45-4e27-ac0e-c223a2e0cb77',
@@ -25,6 +27,7 @@ export const Champions: Record<HeroNames, IHero> = {
     team: Teams.CHAMPIONS,
     cardType: CardType.HERO,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
   NOVA: {
     id: 'cb322dba-93f8-43ba-9442-dcdad10b6e38',
@@ -32,6 +35,7 @@ export const Champions: Record<HeroNames, IHero> = {
     team: Teams.CHAMPIONS,
     cardType: CardType.HERO,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
   TOTALLY_AWESOME_HULK: {
     id: 'de462bef-ed15-451a-bf96-be598c8fcbe7',
@@ -46,5 +50,6 @@ export const Champions: Record<HeroNames, IHero> = {
     team: Teams.CHAMPIONS,
     cardType: CardType.HERO,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
 };

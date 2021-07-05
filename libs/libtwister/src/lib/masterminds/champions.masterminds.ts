@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -28,6 +29,7 @@ export const Champions: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
   EPIC_FIN_FANG_FOOM: {
     id: '30469c57-f4e3-4255-b642-f37aa49eb6b9',
@@ -46,5 +48,6 @@ export const Champions: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.CHAMPIONS,
+    keywords: [DarkCityKeywords.Versatile],
   },
 };

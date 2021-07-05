@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -29,6 +30,7 @@ export const SecretWarsVolume2: Record<HeroNames, IHero> = {
     team: Teams.SPIDER_FRIENDS,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
+    keywords: [DarkCityKeywords.Versatile],
   },
   ARKON_THE_MAGNIFICENT: {
     id: 'e0025882-b4d3-4568-88ed-43d4eb834676',
@@ -98,6 +100,7 @@ export const SecretWarsVolume2: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
+    keywords: [DarkCityKeywords.Teleport],
   },
   SHANGCHI: {
     id: '398084cc-d6e7-4137-867b-5825a3abc751',

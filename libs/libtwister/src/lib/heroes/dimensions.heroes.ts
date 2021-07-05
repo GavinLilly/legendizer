@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -25,6 +26,7 @@ export const Dimensions: Record<HeroNames, IHero> = {
     team: Teams.AVENGERS,
     cardType: CardType.HERO,
     gameSet: GameSets.DIMENSIONS,
+    keywords: [DarkCityKeywords.Teleport],
   },
   SQUIRREL_GIRL: {
     id: 'fbdf540f-c4f4-4b93-ad20-84591cd2e577',
@@ -44,5 +46,6 @@ export const Dimensions: Record<HeroNames, IHero> = {
     name: 'Man-Thing',
     cardType: CardType.HERO,
     gameSet: GameSets.DIMENSIONS,
+    keywords: [DarkCityKeywords.Teleport],
   },
 };

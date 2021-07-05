@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -28,6 +29,7 @@ export const SecretWarsVolume1: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   WASTELAND_HULK: {
     id: '6a55b53d-eb74-467b-8948-dd95619830b8',

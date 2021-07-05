@@ -5,7 +5,7 @@ export const ABOMINATION: IKeywordSummary = {
 };
 
 export const ADAPT: IKeywordSummary = {
-  name: 'Adapt / Adapting Masterminds',
+  name: 'Adapt',
 };
 
 export const ARTIFACTS: IKeywordSummary = {

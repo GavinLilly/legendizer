@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { DarkCity as DarkCityKeywords } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -23,18 +24,21 @@ export const SecretWarsVolume1: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Domain of Apocalypse',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   LIMBO: {
     id: 'db877f4e-d1d8-466b-86c8-c3253f01e282',
     name: 'Limbo',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   MANHATTAN_EARTH1610: {
     id: 'f3daf848-5a1d-44bc-ab5f-3261039cc0a2',
     name: 'Manhattan (Earth-1610)',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Teleport],
   },
   SENTINEL_TERRITORIES: {
     id: '32e33f51-ef58-4752-926b-eb5bf6fae586',
@@ -47,5 +51,6 @@ export const SecretWarsVolume1: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Wasteland',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_1,
+    keywords: [DarkCityKeywords.Bribe],
   },
 };
