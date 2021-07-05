@@ -160,10 +160,16 @@
     </div>
   </div>
   <div
-    *ngIf="(gameSetupStore.gameSetup | async).additionalDeck"
-    class="row row-cols-1"
+    *ngIf="
+      (gameSetupStore.gameSetup | async).additionalDeck ||
+      (gameSetupStore.gameSetup | async).keywords
+    "
+    class="row"
   >
-    <div class="col">
+    <div
+      class="col-12 col-md-6 mx-auto"
+      *ngIf="(gameSetupStore.gameSetup | async).additionalDeck"
+    >
       <!--Additional deck-->
       <schemetwister-iterate-deck
         [deckName]="
@@ -173,6 +179,37 @@
         "
         [deck]="(gameSetupStore.gameSetup | async).additionalDeck?.deck"
       ></schemetwister-iterate-deck>
+    </div>
+    <div
+      [ngClass]="
+        (gameSetupStore.gameSetup | async).additionalDeck
+          ? 'col-12 col-md-6 mx-auto'
+          : 'col-12 mx-auto'
+      "
+      *ngIf="(gameSetupStore.gameSetup | async).keywords"
+    >
+      <div class="card">
+        <div class="card-header">Keywords</div>
+        <div class="card-body p-0">
+          <ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+            <ngb-panel
+              *ngFor="let word of (gameSetupStore.gameSetup | async).keywords"
+              id="panel-{{ word.name | replace: ' ':'_' }}"
+            >
+              <ng-template ngbPanelHeader>
+                <div class="d-flex align-items-center justify-content-between">
+                  <button ngbPanelToggle class="btn btn-link m-0">
+                    {{ word.name }}
+                  </button>
+                </div>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <div [innerHTML]="word.description"></div>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
+      </div>
     </div>
   </div>
 </div>
