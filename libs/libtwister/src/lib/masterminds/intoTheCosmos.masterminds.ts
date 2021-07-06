@@ -1,6 +1,10 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
 import { Henchmen } from '../henchmen';
+import {
+  GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
+  IntoTheCosmos as IntoTheCosmosKeywords,
+} from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -22,6 +26,10 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [
+      IntoTheCosmosKeywords.ContestOfChampions,
+      IntoTheCosmosKeywords.CosmicThreat,
+    ],
   },
   THE_GRANDMASTER: {
     id: 'a94bd803-fe80-4545-9d84-8df02a870f8b',
@@ -31,6 +39,10 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      IntoTheCosmosKeywords.ContestOfChampions,
+    ],
   },
   MAGUS: {
     id: '286d73ed-cd99-4991-bee0-6cdf252e8061',
@@ -40,6 +52,7 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
   },
   EPIC_BEYONDER: {
     id: '8ebd6355-3568-4142-95e5-34069f077c63',
@@ -49,6 +62,10 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [
+      IntoTheCosmosKeywords.ContestOfChampions,
+      IntoTheCosmosKeywords.CosmicThreat,
+    ],
   },
   EPIC_GRANDMASTER: {
     id: '42324863-9864-4b9a-bf20-7ba0396618f8',
@@ -58,6 +75,10 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      IntoTheCosmosKeywords.ContestOfChampions,
+    ],
   },
   EPIC_MAGUS: {
     id: 'a61bdc52-85c1-494d-bd3e-a84920b6289c',
@@ -67,5 +88,6 @@ export const IntoTheCosmos: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.INTO_THE_COSMOS,
+    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
   },
 };
