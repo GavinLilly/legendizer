@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { Villains as VillainsKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -40,6 +41,7 @@ export const FearItself: Record<HeroNames, IHero> = {
     team: Teams.FOES_OF_ASGARD,
     cardType: CardType.HERO,
     gameSet: GameSets.FEAR_ITSELF,
+    keywords: [VillainsKeywords.Demolish],
   },
   SKADI: {
     id: '1737a6bf-634f-4ad2-a7bc-b844493216d9',

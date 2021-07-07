@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { DarkCity as DarkCityKeywords } from '../keywords';
+import {
+  DarkCity as DarkCityKeywords,
+  Villains as VillainsKeywords,
+} from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -19,7 +22,7 @@ export const Champions: Record<HeroNames, IHero> = {
     team: Teams.CHAMPIONS,
     cardType: CardType.HERO,
     gameSet: GameSets.CHAMPIONS,
-    keywords: [DarkCityKeywords.Versatile],
+    keywords: [DarkCityKeywords.Versatile, VillainsKeywords.Demolish],
   },
   MS_MARVEL: {
     id: '7b8700bf-4e45-4e27-ac0e-c223a2e0cb77',
