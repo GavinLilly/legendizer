@@ -392,7 +392,10 @@ ${GameSets.ALL.filter((item) =>
     }
 
     // Function to check in which order 2 cards should come based on their name
-    function sortNameComparator(item1: ICard, item2: ICard) {
+    function sortNameComparator(
+      item1: ICard | IKeyword,
+      item2: ICard | IKeyword
+    ) {
       if (item1.name < item2.name) return -1;
       else if (item1.name > item2.name) return 1;
       else return 0;
@@ -457,7 +460,9 @@ ${GameSets.ALL.filter((item) =>
     addKeyword(gameSetup.mastermind.keywords);
 
     gameSetup.keywords =
-      uniqueKeywords.size == 0 ? undefined : [...uniqueKeywords];
+      uniqueKeywords.size == 0
+        ? undefined
+        : [...uniqueKeywords].sort(sortNameComparator);
 
     return gameSetup;
   }
