@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -18,6 +19,7 @@ export const WorldWarHulk: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Aspects of the Void',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   CODE_RED: {
     id: '88d5ca32-e078-40e0-a4dc-b300d7424d66',
@@ -42,6 +44,7 @@ export const WorldWarHulk: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Sakaar Imperial Guard',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   UFOES: {
     id: 'e35df983-8b44-444f-b8cc-8a084aef0d0c',
@@ -54,5 +57,6 @@ export const WorldWarHulk: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Warbound',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
 };

@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -17,5 +18,6 @@ export const SpiderManHomecoming: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Vulture Tech',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SPIDERMAN_HOMECOMING,
+    keywords: [PaintTheTownRedKeywords.WallCrawl],
   },
 };

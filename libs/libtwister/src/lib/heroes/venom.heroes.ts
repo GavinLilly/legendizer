@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -18,6 +19,7 @@ export const Venom: Record<HeroNames, IHero> = {
     team: Teams.VENOMVERSE,
     cardType: CardType.HERO,
     gameSet: GameSets.VENOM,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   VENOM: {
     id: 'c2b14ce7-1800-4abf-a50c-09fdcea904a2',

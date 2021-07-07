@@ -1,5 +1,7 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
+
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -84,6 +86,7 @@ export const WorldWarHulk: Record<HeroNames, IHero> = {
     team: Teams.WARBOUND,
     cardType: CardType.HERO,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   NAMORA: {
     id: 'a2fdda90-a561-42b3-a69a-2996ea3b7a3d',
@@ -98,6 +101,7 @@ export const WorldWarHulk: Record<HeroNames, IHero> = {
     team: Teams.WARBOUND,
     cardType: CardType.HERO,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   RICK_JONES: {
     id: 'f79e960b-135b-46da-b637-864499b235d6',
@@ -112,6 +116,7 @@ export const WorldWarHulk: Record<HeroNames, IHero> = {
     team: Teams.AVENGERS,
     cardType: CardType.HERO,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [PaintTheTownRedKeywords.Feast],
   },
   SHEHULK: {
     id: '7359ed89-db62-4eda-afa0-f5575577e065',

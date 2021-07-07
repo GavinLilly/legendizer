@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -24,6 +25,7 @@ export const SpiderManHomecoming: Record<HeroNames, IHero> = {
     team: Teams.SPIDER_FRIENDS,
     cardType: CardType.HERO,
     gameSet: GameSets.SPIDERMAN_HOMECOMING,
+    keywords: [PaintTheTownRedKeywords.WallCrawl],
   },
   PETER_PARKER_HOMECOMING: {
     id: '3f74c939-9ae7-473f-8020-e7e1d973dd92',
@@ -31,6 +33,7 @@ export const SpiderManHomecoming: Record<HeroNames, IHero> = {
     team: Teams.SPIDER_FRIENDS,
     cardType: CardType.HERO,
     gameSet: GameSets.SPIDERMAN_HOMECOMING,
+    keywords: [PaintTheTownRedKeywords.WallCrawl],
   },
   PETERS_ALLIES: {
     id: '2b5d17f1-ae3b-4f30-b459-655ae2e27886',

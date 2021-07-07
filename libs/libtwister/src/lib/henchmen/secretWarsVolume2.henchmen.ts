@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
 
 import { IHenchmen } from './henchmen.interface';
 
@@ -32,5 +33,6 @@ export const SecretWarsVolume2: Record<HenchmenNames, IHenchmen> = {
     cardType: CardType.HENCHMEN,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
     fight: 'The next Hero you gain this turn has Wall-Crawl',
+    keywords: [PaintTheTownRedKeywords.WallCrawl],
   },
 };
