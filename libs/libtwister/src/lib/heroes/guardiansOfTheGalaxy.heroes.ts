@@ -14,7 +14,10 @@ export const GuardiansOfTheGalaxy: Record<HeroNames, IHero> = {
     team: Teams.GUARDIANS_OF_THE_GALAXY,
     cardType: CardType.HERO,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   },
   GAMORA: {
     id: '1e9cd62a-e5cc-4e3d-80bc-536e224b3084',
@@ -22,7 +25,10 @@ export const GuardiansOfTheGalaxy: Record<HeroNames, IHero> = {
     team: Teams.GUARDIANS_OF_THE_GALAXY,
     cardType: CardType.HERO,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   },
   GROOT: {
     id: '2dd7d917-078b-4976-9bb1-73a3603516b2',
@@ -38,7 +44,10 @@ export const GuardiansOfTheGalaxy: Record<HeroNames, IHero> = {
     team: Teams.GUARDIANS_OF_THE_GALAXY,
     cardType: CardType.HERO,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   },
   STAR_LORD: {
     id: '367a0142-83e2-4378-ade7-d324e697d997',
@@ -46,6 +55,9 @@ export const GuardiansOfTheGalaxy: Record<HeroNames, IHero> = {
     team: Teams.GUARDIANS_OF_THE_GALAXY,
     cardType: CardType.HERO,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   },
 };

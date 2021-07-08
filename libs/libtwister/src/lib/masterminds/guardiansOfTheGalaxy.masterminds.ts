@@ -26,5 +26,6 @@ export const GuardiansOfTheGalaxy: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
+    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
   },
 };

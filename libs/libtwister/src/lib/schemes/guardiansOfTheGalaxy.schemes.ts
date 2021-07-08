@@ -22,7 +22,10 @@ export const GuardiansOfTheGalaxy: Record<SchemeNames, IScheme> = {
       inVillainDeck: [VillainGroups.GUARDIANS_OF_THE_GALAXY.INFINITY_GEMS],
     },
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   }),
   INTERGALACTIC_KREE_NEGA_BOMB: new Scheme(
     {

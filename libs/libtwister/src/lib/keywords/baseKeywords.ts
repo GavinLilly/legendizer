@@ -8,8 +8,8 @@ export const ADAPT: IKeywordSummary = {
   name: 'Adapt',
 };
 
-export const ARTIFACTS: IKeywordSummary = {
-  name: 'Artifacts',
+export const ARTIFACT: IKeywordSummary = {
+  name: 'Artifact',
 };
 
 export const BERSERK: IKeywordSummary = {

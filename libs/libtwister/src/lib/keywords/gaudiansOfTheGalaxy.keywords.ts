@@ -1,6 +1,6 @@
 import { HeroClass } from '../enums';
 
-import { ARTIFACTS, SHARDS } from './baseKeywords';
+import { ARTIFACT, SHARDS } from './baseKeywords';
 import { IKeyword } from './keyword.interface';
 
 export const Shards: IKeyword = {
@@ -14,7 +14,7 @@ export const Shards: IKeyword = {
 };
 
 export const Artifact: IKeyword = {
-  ...ARTIFACTS,
+  ...ARTIFACT,
   description: `This set also contains powerful new "Artifacts" cards that players can use for permanent advantages. Some Hero cards are also Artifacts. (They still count as Hero cards too.) When you gain a Hero Artifact, put it in your discard pile like any other Hero card. When you draw that Artifact later in the game, you may play it in front of you and use its effects, usually once on each of your turns. This means you "control" that Artifact. At the end of your turn, when you discard all the cards you played that turn, the Artifacts you control stay in.
 <ul>
 <li>You can use an Artifact on the first turn you play it.</li>

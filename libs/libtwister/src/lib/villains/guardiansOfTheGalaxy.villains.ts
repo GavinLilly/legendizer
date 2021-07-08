@@ -19,6 +19,9 @@ export const GuardiansOfTheGalaxy: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Infinity Gems',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.GUARDIANS_OF_THE_GALAXY,
-    keywords: [GuardiansOfTheGalaxyKeywords.Shards],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Shards,
+      GuardiansOfTheGalaxyKeywords.Artifact,
+    ],
   },
 };

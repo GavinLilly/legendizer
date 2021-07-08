@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -39,6 +40,7 @@ export const HeroesOfAsgard: Record<HeroNames, IHero> = {
     team: Teams.HEROES_OF_ASGARD,
     cardType: CardType.HERO,
     gameSet: GameSets.HEROES_OF_ASGARD,
+    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
   },
   THE_WARRIORS_THREE: {
     id: '36daa26b-af79-47cc-bd07-2e1653a2655e',
