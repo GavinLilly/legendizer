@@ -3,6 +3,7 @@ import { GameSets } from '../gamesets';
 import {
   DarkCity as DarkCityKeywords,
   PaintTheTownRed as PaintTheTownRedKeywords,
+  SecretWarsVolume1 as SecretWarsVolume1Keywords,
 } from '../keywords';
 import { Teams } from '../teams';
 
@@ -130,6 +131,7 @@ export const SecretWarsVolume2: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     cardType: CardType.HERO,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
+    keywords: [SecretWarsVolume1Keywords.CrossDimensionalRampage],
   },
   SPIDERGWEN: {
     id: 'eeaa7352-9c50-4764-b68e-e45d29b0fbdf',

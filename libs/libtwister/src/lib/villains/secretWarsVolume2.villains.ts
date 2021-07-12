@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { SecretWarsVolume1 as SecretWarsVolume1Keywords } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -35,6 +36,7 @@ export const SecretWarsVolume2: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Monster Metropolis',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
+    keywords: [SecretWarsVolume1Keywords.CrossDimensionalRampage],
   },
   UTOPOLIS: {
     id: 'e983b5b3-8d3e-4e4e-a670-f0d78875eccc',
@@ -47,5 +49,6 @@ export const SecretWarsVolume2: Record<VillainGroupNames, IVillainGroup> = {
     name: "X-Men '92",
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.SECRET_WARS_VOLUME_2,
+    keywords: [SecretWarsVolume1Keywords.CrossDimensionalRampage],
   },
 };

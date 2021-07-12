@@ -9,3 +9,4 @@ export * as SpiderManHomecoming from './spiderManHomecoming.keywords';
 export * as PaintTheTownRed from './paintTheTown.keywords';
 export * as Villains from './villains.keywords';
 export * as FearItself from './fearItself.keywords';
+export * as SecretWarsVolume1 from './secretWarsVolume1.keywords';
