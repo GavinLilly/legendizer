@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords } from '../keywords';
+import {
+  GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
+  FearItself as FearItselfKeywords,
+} from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -16,7 +19,10 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      FearItselfKeywords.ThrownArtifact,
+    ],
   },
   EPIC_MALEKITH: {
     id: '55ba618a-f935-4d75-ae83-5d78fa71e177',
@@ -26,7 +32,10 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      FearItselfKeywords.ThrownArtifact,
+    ],
   },
   HELA: {
     id: '7e0e4ad1-34b6-41a1-939c-713ac0b1cc05',
@@ -36,7 +45,10 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      FearItselfKeywords.ThrownArtifact,
+    ],
   },
   EPIC_HELA: {
     id: '91809fea-40ce-4238-ab2b-686bd76926b2',
@@ -46,6 +58,9 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      FearItselfKeywords.ThrownArtifact,
+    ],
   },
 };

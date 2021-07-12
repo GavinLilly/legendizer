@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords } from '../keywords';
+import {
+  GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
+  FearItself as FearItselfKeywords,
+} from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
 
@@ -12,7 +15,10 @@ export const HeroesOfAsgard: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Dark Council',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      FearItselfKeywords.ThrownArtifact,
+    ],
   },
   OMENS_OF_RAGNAROK: {
     id: '2948ab8b-45f6-418c-8b1b-304a43e79878',
