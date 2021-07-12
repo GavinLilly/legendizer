@@ -10,3 +10,4 @@ export * as PaintTheTownRed from './paintTheTown.keywords';
 export * as Villains from './villains.keywords';
 export * as FearItself from './fearItself.keywords';
 export * as SecretWarsVolume1 from './secretWarsVolume1.keywords';
+export * as SecretWarsVolume2 from './secretWarsVolume2.keywords';

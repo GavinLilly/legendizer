@@ -49,7 +49,7 @@ export const CHOOSE_A_VILLAIN_GROUP: IKeywordSummary = {
 };
 
 export const CIRCLE_OF_KUNG_FU: IKeywordSummary = {
-  name: 'Circle of Kung-Fu',
+  name: 'Circle of Kung-Fu (and Quack-Fu)',
 };
 
 export const CONQUEROR: IKeywordSummary = {
