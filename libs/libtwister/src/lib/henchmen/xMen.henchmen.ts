@@ -51,6 +51,7 @@ export const X_Men: Record<HenchmenNames, IHenchmen> = {
     victoryPoints: 1,
     gameSet: GameSets.X_MEN,
     cardType: CardType.HENCHMEN,
+    keywords: [X_MenKeywords.HumanShields],
   },
   SHIAR_PATROL_CRAFT: {
     id: '978c30a5-75eb-43ca-9a8f-c724208ecaa9',
@@ -60,5 +61,6 @@ export const X_Men: Record<HenchmenNames, IHenchmen> = {
     victoryPoints: 1,
     gameSet: GameSets.X_MEN,
     cardType: CardType.HENCHMEN,
+    keywords: [X_MenKeywords.SoaringFlight],
   },
 };
