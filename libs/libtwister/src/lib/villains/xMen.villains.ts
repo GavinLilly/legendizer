@@ -30,7 +30,11 @@ export const X_Men: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Hellfire Club',
     gameSet: GameSets.X_MEN,
     cardType: CardType.VILLAINGROUP,
-    keywords: [X_MenKeywords.Dominate, X_MenKeywords.Traps],
+    keywords: [
+      X_MenKeywords.Dominate,
+      X_MenKeywords.Traps,
+      X_MenKeywords.TokenCards,
+    ],
   },
   MOJOVERSE: {
     id: '51be7e1f-d2a6-49cb-8155-392bb497db2e',
@@ -44,7 +48,11 @@ export const X_Men: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Murderworld',
     gameSet: GameSets.X_MEN,
     cardType: CardType.VILLAINGROUP,
-    keywords: [X_MenKeywords.HumanShields, X_MenKeywords.Traps],
+    keywords: [
+      X_MenKeywords.HumanShields,
+      X_MenKeywords.Traps,
+      X_MenKeywords.TokenCards,
+    ],
   },
   SHADOW_X: {
     id: '46bb7cbc-16f1-4df1-8cb8-b591e1ec8d4a',
@@ -63,7 +71,11 @@ export const X_Men: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Shiar Imperial Guard',
     gameSet: GameSets.X_MEN,
     cardType: CardType.VILLAINGROUP,
-    keywords: [X_MenKeywords.Dominate, X_MenKeywords.Traps],
+    keywords: [
+      X_MenKeywords.Dominate,
+      X_MenKeywords.Traps,
+      X_MenKeywords.TokenCards,
+    ],
   },
   SISTERHOOD_OF_MUTANTS: {
     id: '3d71cf65-e446-4f42-bb95-f596726ac80a',

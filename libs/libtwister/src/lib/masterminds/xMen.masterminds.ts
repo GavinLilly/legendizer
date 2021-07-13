@@ -72,6 +72,7 @@ export const X_Men: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     gameSet: GameSets.X_MEN,
     cardType: CardType.MASTERMIND,
+    keywords: [X_MenKeywords.TokenCards],
   },
   EPIC_DEATHBIRD: {
     id: '56cd82c2-548a-48dd-a1d6-1437dbe5bda8',
@@ -86,6 +87,7 @@ export const X_Men: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     gameSet: GameSets.X_MEN,
     cardType: CardType.MASTERMIND,
+    keywords: [X_MenKeywords.TokenCards],
   },
   MOJO: {
     id: '35177145-ec24-4858-98ed-0159e2e412ab',
