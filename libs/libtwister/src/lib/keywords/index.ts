@@ -13,3 +13,4 @@ export * as SecretWarsVolume1 from './secretWarsVolume1.keywords';
 export * as SecretWarsVolume2 from './secretWarsVolume2.keywords';
 export * as CaptainAmerica from './captainAmerica.keywords';
 export * as CivilWar from './civilWar.keywords';
+export * as Deadpool from './deadpool.keywords';

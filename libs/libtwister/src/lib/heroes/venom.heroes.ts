@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
+import {
+  PaintTheTownRed as PaintTheTownRedKeywords,
+  Deadpool as DeadpoolKeywords,
+} from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -19,7 +22,10 @@ export const Venom: Record<HeroNames, IHero> = {
     team: Teams.VENOMVERSE,
     cardType: CardType.HERO,
     gameSet: GameSets.VENOM,
-    keywords: [PaintTheTownRedKeywords.Feast],
+    keywords: [
+      PaintTheTownRedKeywords.Feast,
+      DeadpoolKeywords.ExcessiveViolence,
+    ],
   },
   VENOM: {
     id: 'c2b14ce7-1800-4abf-a50c-09fdcea904a2',
@@ -27,6 +33,7 @@ export const Venom: Record<HeroNames, IHero> = {
     team: Teams.VENOMVERSE,
     cardType: CardType.HERO,
     gameSet: GameSets.VENOM,
+    keywords: [DeadpoolKeywords.ExcessiveViolence],
   },
   VENOM_ROCKET: {
     id: '5051052a-74d8-449a-9e9f-ed33aa8d66ef',
@@ -34,6 +41,7 @@ export const Venom: Record<HeroNames, IHero> = {
     team: Teams.VENOMVERSE,
     cardType: CardType.HERO,
     gameSet: GameSets.VENOM,
+    keywords: [DeadpoolKeywords.ExcessiveViolence],
   },
   VENOMIZED_DR_STRANGE: {
     id: 'd70b182b-cdc8-4f0e-a001-cf0db996d788',
@@ -48,5 +56,6 @@ export const Venom: Record<HeroNames, IHero> = {
     team: Teams.VENOMVERSE,
     cardType: CardType.HERO,
     gameSet: GameSets.VENOM,
+    keywords: [DeadpoolKeywords.ExcessiveViolence],
   },
 };
