@@ -1,5 +1,6 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
+import { CivilWar as CivilWarKeywords } from '../keywords';
 import { Teams } from '../teams';
 
 import { IHero } from './hero.interface';
@@ -28,6 +29,7 @@ export const X_Men: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     gameSet: GameSets.X_MEN,
     cardType: CardType.HERO,
+    keywords: [CivilWarKeywords.Divided],
   },
   BANSHEE: {
     id: 'a3ff4e01-6c49-46bf-bd12-01180a4f37bb',
@@ -56,6 +58,7 @@ export const X_Men: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     gameSet: GameSets.X_MEN,
     cardType: CardType.HERO,
+    keywords: [CivilWarKeywords.Divided],
   },
   DAZZLER: {
     id: 'ae9b6454-defa-4d25-8e3e-787e3e088cc2',
@@ -91,6 +94,7 @@ export const X_Men: Record<HeroNames, IHero> = {
     team: Teams.X_MEN,
     gameSet: GameSets.X_MEN,
     cardType: CardType.HERO,
+    keywords: [CivilWarKeywords.Divided],
   },
   LONGSHOT: {
     id: '7c472f3c-eb7d-4bc0-8bc1-8fb596617e82',
