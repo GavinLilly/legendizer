@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
+import {
+  PaintTheTownRed as PaintTheTownRedKeywords,
+  WorldWarHulk as WorldWarHulkKeywords,
+} from '../keywords';
 import { VillainGroups } from '../villains';
 
 import { IMastermind } from './mastermind.interface';
@@ -22,6 +25,11 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [
+      WorldWarHulkKeywords.Transform,
+      WorldWarHulkKeywords.WoundedFury,
+      WorldWarHulkKeywords.CrossDimensionalRampage,
+    ],
   },
   ILLUMINATI_SECRET_SOCIETY: {
     id: '11332b30-7a2c-48d0-bbdb-d48860fd7769',
@@ -31,6 +39,7 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [WorldWarHulkKeywords.Transform, WorldWarHulkKeywords.Outwit],
   },
   KING_HULK_SAKAARSON: {
     id: '3f018456-2aff-47a5-8556-f2be139ae2f9',
@@ -40,6 +49,11 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [
+      WorldWarHulkKeywords.Transform,
+      WorldWarHulkKeywords.WoundedFury,
+      WorldWarHulkKeywords.CrossDimensionalRampage,
+    ],
   },
   MODOK: {
     id: '7e7b6054-969f-4854-8049-39578bbf08ae',
@@ -49,6 +63,7 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [WorldWarHulkKeywords.Transform, WorldWarHulkKeywords.Outwit],
   },
   THE_RED_KING: {
     id: 'fdf31917-70fd-4745-8625-7510fa5224e5',
@@ -58,6 +73,7 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
+    keywords: [WorldWarHulkKeywords.Transform],
   },
   THE_SENTRY: {
     id: '14512d58-4e07-404c-a970-2d798202d801',
@@ -67,6 +83,11 @@ export const WorldWarHulk: Record<MastermindNames, IMastermind> = {
     victoryPoints: 6,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.WORLD_WAR_HULK,
-    keywords: [PaintTheTownRedKeywords.Feast],
+    keywords: [
+      PaintTheTownRedKeywords.Feast,
+      WorldWarHulkKeywords.Transform,
+      WorldWarHulkKeywords.WoundedFury,
+      WorldWarHulkKeywords.CrossDimensionalRampage,
+    ],
   },
 };

@@ -1,6 +1,9 @@
 import { CardType } from '../enums';
 import { GameSets } from '../gamesets';
-import { PaintTheTownRed as PaintTheTownRedKeywords } from '../keywords';
+import {
+  PaintTheTownRed as PaintTheTownRedKeywords,
+  WorldWarHulk as WorldWarHulkKeywords,
+} from '../keywords';
 
 import { IHenchmen } from './henchmen.interface';
 
@@ -27,6 +30,7 @@ export const WorldWarHulk: Record<HenchmenNames, IHenchmen> = {
     gameSet: GameSets.WORLD_WAR_HULK,
     fight:
       "If you Outwit these Death's Heads, KO one of your cards that costs 0.",
+    keywords: [WorldWarHulkKeywords.Outwit],
   },
   SAKAARAN_HIVELINGS: {
     id: '572260df-5a13-4726-b7a4-84135a419b0e',
