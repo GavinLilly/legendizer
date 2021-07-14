@@ -1,5 +1,5 @@
 import { HeroClass } from '../enums';
-import { FantasticFour } from '../keywords';
+import { FantasticFour } from '.';
 
 import {
   BURNING_SHARDS,
@@ -52,8 +52,7 @@ export const ContestOfChampions: IKeyword = {
 export const CosmicThreat: IKeyword = {
   ...FantasticFour.CosmicThreat,
   description: `${FantasticFour.CosmicThreat.description}
-
-
+---
 <ul>
 <li>The Celestials say things like "Cosmic Threat ${HeroClass.STRENGTH} or ${HeroClass.INSTINCT}." You can choose to use either ${HeroClass.STRENGTH} or ${HeroClass.INSTINCT} cards for its Cosmic Threat in a single turn, but you can't use both to reduce its Attack.</li>
 <li>If you try to fight a Mastermind with Cosmic Threat a second time in the same turn, it will return to its full Attack, and you cannot use any Cosmic Threat abilities against it in additional fights that turn.</li>

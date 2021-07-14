@@ -3,6 +3,7 @@ import { GameSets } from '../gamesets';
 import {
   DarkCity as DarkCityKeywords,
   Villains as VillainsKeywords,
+  Champions as ChampionsKeywords,
 } from '../keywords';
 import { VillainGroups } from '../villains';
 
@@ -23,7 +24,7 @@ export const Champions: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.CHAMPIONS,
-    keywords: [VillainsKeywords.Demolish],
+    keywords: [VillainsKeywords.Demolish, ChampionsKeywords.SizeChanging],
   },
   PAGLIACCI: {
     id: 'bc34e995-15f6-4918-922d-7e3c1e6f1a12',
@@ -43,7 +44,7 @@ export const Champions: Record<MastermindNames, IMastermind> = {
     victoryPoints: 7,
     cardType: CardType.MASTERMIND,
     gameSet: GameSets.CHAMPIONS,
-    keywords: [VillainsKeywords.Demolish],
+    keywords: [VillainsKeywords.Demolish, ChampionsKeywords.SizeChanging],
   },
   EPIC_PAGLIACCI: {
     id: '10fdfc96-fd5d-402f-945e-f800d83fd7ea',

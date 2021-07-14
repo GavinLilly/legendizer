@@ -15,3 +15,4 @@ export * as CaptainAmerica from './captainAmerica.keywords';
 export * as CivilWar from './civilWar.keywords';
 export * as Deadpool from './deadpool.keywords';
 export * as Noir from './noir.keywords';
+export * as Champions from './champions.keywords';
