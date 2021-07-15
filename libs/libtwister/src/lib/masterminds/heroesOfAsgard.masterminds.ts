@@ -3,6 +3,7 @@ import { GameSets } from '../gamesets';
 import {
   GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
   FearItself as FearItselfKeywords,
+  MarvelStudios as MarvelStudiosKeywords,
 } from '../keywords';
 import { VillainGroups } from '../villains';
 
@@ -48,6 +49,7 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     keywords: [
       GuardiansOfTheGalaxyKeywords.Artifact,
       FearItselfKeywords.ThrownArtifact,
+      MarvelStudiosKeywords.Conqueror,
     ],
   },
   EPIC_HELA: {
@@ -61,6 +63,7 @@ export const HeroesOfAsgard: Record<MastermindNames, IMastermind> = {
     keywords: [
       GuardiansOfTheGalaxyKeywords.Artifact,
       FearItselfKeywords.ThrownArtifact,
+      MarvelStudiosKeywords.Conqueror,
     ],
   },
 };

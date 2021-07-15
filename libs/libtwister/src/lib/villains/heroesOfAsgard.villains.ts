@@ -3,6 +3,7 @@ import { GameSets } from '../gamesets';
 import {
   GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
   FearItself as FearItselfKeywords,
+  MarvelStudios as MarvelStudiosKeywords,
 } from '../keywords';
 
 import { IVillainGroup } from './villainGroup.interface';
@@ -25,6 +26,9 @@ export const HeroesOfAsgard: Record<VillainGroupNames, IVillainGroup> = {
     name: 'Omens of Ragnarok',
     cardType: CardType.VILLAINGROUP,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [GuardiansOfTheGalaxyKeywords.Artifact],
+    keywords: [
+      GuardiansOfTheGalaxyKeywords.Artifact,
+      MarvelStudiosKeywords.Conqueror,
+    ],
   },
 };

@@ -3,6 +3,7 @@ import { GameSets } from '../gamesets';
 import {
   GuardiansOfTheGalaxy as GuardiansOfTheGalaxyKeywords,
   FearItself as FearItselfKeywords,
+  MarvelStudios as MarvelStudiosKeywords,
 } from '../keywords';
 import { Teams } from '../teams';
 
@@ -38,7 +39,10 @@ export const HeroesOfAsgard: Record<HeroNames, IHero> = {
     team: Teams.HEROES_OF_ASGARD,
     cardType: CardType.HERO,
     gameSet: GameSets.HEROES_OF_ASGARD,
-    keywords: [FearItselfKeywords.ThrownArtifact],
+    keywords: [
+      FearItselfKeywords.ThrownArtifact,
+      MarvelStudiosKeywords.Conqueror,
+    ],
   },
   LADY_SIF: {
     id: 'cf0b41f2-f0aa-4f80-a0a3-74a85629cf5c',
@@ -57,5 +61,6 @@ export const HeroesOfAsgard: Record<HeroNames, IHero> = {
     team: Teams.HEROES_OF_ASGARD,
     cardType: CardType.HERO,
     gameSet: GameSets.HEROES_OF_ASGARD,
+    keywords: [MarvelStudiosKeywords.Conqueror],
   },
 };

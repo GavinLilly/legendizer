@@ -17,3 +17,4 @@ export * as Deadpool from './deadpool.keywords';
 export * as Noir from './noir.keywords';
 export * as Champions from './champions.keywords';
 export * as WorldWarHulk from './worldWarHulk.keywords';
+export * as MarvelStudios from './marvelStudios.keywords';
